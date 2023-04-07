@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tooling-pod
+spec:
+  containers:
+  - name: tooling-frontend
+    image: mshallom/tooling:v1
+    ports:
+    - containerPort: 80
